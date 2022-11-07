@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import NavbarApp from "../components/NavbarApp";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavbarApp />
-      <section className="py-5">
+      <section className="py-5 bg-info">
         <Container>
           <Row>
             <Col md={4}>
@@ -26,6 +26,23 @@ export default function Home() {
                 Asah potensi diri kamu menjadi developer handal bersama praktisi
                 berpengalaman dan kembangkan karir digital kamu sekarang!
               </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col md={3}>
+              <Card>
+                <Card.Body>
+                  <h4 className="fw-semibold">Kurikulum Terbaru</h4>
+                  <p>
+                    Anda akan belajar bersama instruktur yang berpengalaman
+                    sehingga memudahkan Anda untuk memahami dengan cepat.
+                  </p>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
