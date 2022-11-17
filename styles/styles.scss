@@ -6,3 +6,9 @@ body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
+
+ul.column {
+  column-count: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
