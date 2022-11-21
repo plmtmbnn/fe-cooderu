@@ -1,10 +1,10 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 function FooterApp() {
   return (
-    <div className="py-5">
-      <Container>Footer</Container>
+    <div className="py-5 bg-secondary">
+      <Container>ini row 1</Container>
     </div>
   );
 }

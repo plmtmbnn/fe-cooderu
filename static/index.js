@@ -5,6 +5,19 @@ import career from "../public/assets/board-green.svg";
 import project from "../public/assets/code-yellow.svg";
 import community from "../public/assets/people-orange.svg";
 
+// icons payment methods
+import gradCap from "../public/graduation-cap.svg";
+import moneyBox from "../public/money-box.svg";
+import transaction from "../public/transaction.svg";
+import handCash from "../public/cash-in-hand.svg";
+
+// img team
+import pakHerman from "../public/HermanHandoko.png";
+import pakIchwan from "../public/IchwanPeryana.png";
+import pakAditya from "../public/AdityaSiregar.png";
+import pakAdrian from "../public/AdrianBenhard.png";
+import pakPolma from "../public/PolmaTambunan.png";
+
 export const _headerCard = [
   {
     title: "Kurikulum Terbaru",
@@ -128,5 +141,56 @@ export const _pricing = [
       "Pelatihan karir & lowongan pekerjaan",
     ],
     special: false,
+  },
+];
+
+export const _payment = [
+  {
+    title: "Bayar full/lunas",
+    desc: "Setelah  melakukan proses pendaftaran, langsung melakukan pembayaran full/lunas.",
+    icon: handCash,
+  },
+  {
+    title: "Belajar dulu, bayar nanti",
+    desc: "Belajar dulu dan bayar setelah Anda menyelesaikan bootcamp 3 bulan bersama Cooderu.",
+    icon: transaction,
+  },
+  {
+    title: "Cicilan",
+    desc: "Sesuaikan pembayaran Anda agar sesuai dengan rencana pengeluaran Anda.",
+    icon: moneyBox,
+  },
+  {
+    title: "Beasiswa",
+    desc: "Dapatkan tunjangan penuh belajar backend dan frontend bersama Cooderu",
+    icon: gradCap,
+  },
+];
+
+export const _ourTeam = [
+  {
+    name: "Aditya Siregar",
+    desc: "Co-Founder",
+    image: pakAditya,
+  },
+  {
+    name: "Polma Tambunan",
+    desc: "Co-Founder",
+    image: pakPolma,
+  },
+  {
+    name: "Adrian Benhard",
+    desc: "Co-Founder",
+    image: pakAdrian,
+  },
+  {
+    name: "Herman Handoko",
+    desc: "Advisor",
+    image: pakHerman,
+  },
+  {
+    name: "Ichwan Peryana",
+    desc: "Advisor",
+    image: pakIchwan,
   },
 ];

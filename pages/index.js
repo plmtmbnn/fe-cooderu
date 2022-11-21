@@ -10,6 +10,7 @@ import {
   _silabusBE,
   _silabusFE,
   _whyUs,
+  _ourTeam,
 } from "../static";
 
 // images
@@ -222,9 +223,47 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section>
-        <Container></Container>
+
+      <section className="my-5">
+        <Container>
+          <div className="text-center">
+            <span>Testimoni</span>
+            <h2 className="fw-bold">Apa Kata Alumni</h2>
+          </div>
+        </Container>
       </section>
+
+      <section className="my-5">
+        <Container>
+          <h2 className="fw-bold text-center">Tim Kami</h2>
+          <Row className="justify-content-center">
+            {_ourTeam.map((data, i) => (
+              <Col key={i} md={2}>
+                <Card className="h-100 py-4">
+                  <Card.Img variant="top" src={data.image} alt="team" />
+                  <Card.Body>
+                    <h6 className="fw-semibold">{data.name}</h6>
+                    <span>{data.desc}</span>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+
+      <section className="my-5">
+        <Container>
+          <div className="text-center">
+            <h2 className="fw-bold">FAQ</h2>
+            <span>
+              Kamu juga bisa menghubungi kami untuk mengetahui informasi lebih
+              lanjut
+            </span>
+          </div>
+        </Container>
+      </section>
+
       <FooterApp />
     </>
   );
