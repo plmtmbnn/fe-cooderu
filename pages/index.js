@@ -22,6 +22,7 @@ import {
   _whyUs,
   _ourTeam,
   _payment,
+  _almusnus,
 } from "../static";
 
 // images
@@ -318,35 +319,33 @@ export default function Home() {
             <h3 className="fw-bold">Apa Kata Alumni?</h3>
           </div>
           <Row className="justify-content-center mt-4">
-            <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <div className="d-flex">
-                    <img
-                      src="https://via.placeholder.com/75"
-                      alt=""
-                      className="h-100 rounded-circle"
-                    />
-                    <div className="ms-3 mt-2">
-                      <h6 className="mb-0">Oscar</h6>
-                      <h6 className="mb-0">Alumni Batch I</h6>
-                      <div style={{ color: "#F2C763" }}>
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
+            {_almusnus.map((data, i) => (
+              <Col md={3} key={i}>
+                <Card className="h-100">
+                  <Card.Body>
+                    <div className="d-flex">
+                      <img
+                        src="https://via.placeholder.com/75"
+                        alt=""
+                        className="h-100 rounded-circle"
+                      />
+                      <div className="ms-3 mt-2">
+                        <h6 className="mb-0">{data.name}</h6>
+                        <h6 className="mb-0">{data.almnus}</h6>
+                        <div style={{ color: "#F2C763" }}>
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h6 className="mt-4 fw-normal">
-                    “Mentor berpengalaman dan cepat tanggap sangat membantu saya
-                    untuk memahami setiap materi dan menyelesaikan masalah yang
-                    saya temui selama mengikuti Bootcamp.“
-                  </h6>
-                </Card.Body>
-              </Card>
-            </Col>
+                    <h6 className="mt-4 fw-normal">{data.desc}</h6>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>

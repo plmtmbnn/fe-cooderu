@@ -198,3 +198,21 @@ export const _ourTeam = [
     image: pakIchwan,
   },
 ];
+
+export const _almusnus = [
+  {
+    name: "Oscar",
+    almnus: "Alumni Batch I",
+    desc: "Mentor berpengalaman dan cepat tanggap sangat membantu saya untuk memahami setiap materi dan menyelesaikan masalah yang saya temui selama mengikuti Bootcamp.",
+  },
+  {
+    name: "Daffa",
+    almnus: "Alumni Batch I",
+    desc: "Kuruikulum yang diberikan oleh Cooderu bermanfaat bagi saya karena relevan dengan industri, sehingga lebih mudah untuk diterapkan di tempat kerja.",
+  },
+  {
+    name: "Stanley",
+    almnus: "Alumni Batch I",
+    desc: "Silabus sangat fokus dan kelas sangat fleksibel, memudahkan saya yang memiliki aktivitas di luar Bootcamp.",
+  },
+];
