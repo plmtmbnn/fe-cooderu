@@ -4,7 +4,13 @@ import Image from "next/image";
 import { Card, Col, Container, Row, Nav, Tab, Button } from "react-bootstrap";
 import FooterApp from "../components/FooterApp";
 import NavbarApp from "../components/NavbarApp";
-import { _headerCard, _silabusBE, _silabusFE } from "../static";
+import {
+  _headerCard,
+  _pricing,
+  _silabusBE,
+  _silabusFE,
+  _whyUs,
+} from "../static";
 
 // images
 import imgReact from "../public/react-logo.png";
@@ -57,7 +63,7 @@ export default function Home() {
       <section className="mt-5">
         <Container>
           <div className="text-center">
-            <span>Mulai belajar sekarang</span>
+            <h5>Mulai belajar sekarang</h5>
             <h2 className="fw-bold">Program Bootcamp</h2>
           </div>
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -101,7 +107,7 @@ export default function Home() {
                   </Col>
                 </Row>
                 <div className="mt-4">
-                  <span>Silabus</span>
+                  <h5>Silabus</h5>
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
                   <ul className="column mt-3">
                     {_silabusFE.map((data, i) => (
@@ -141,7 +147,7 @@ export default function Home() {
                   </Col>
                 </Row>
                 <div className="mt-4">
-                  <span>Silabus</span>
+                  <h5>Silabus</h5>
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
                   <ul className="column mt-3">
                     {_silabusBE.map((data, i) => (
@@ -153,6 +159,71 @@ export default function Home() {
             </Tab.Content>
           </Tab.Container>
         </Container>
+      </section>
+      <section className="py-5">
+        <Container>
+          <h5>Benefit</h5>
+          <h4 className="fw-bold">Mengapa Cooderu?</h4>
+          <p>
+            Program komprehensif kami mempersiapkan siswa untuk memasuki dunia
+            <br />
+            kerja sebagai pengembang adaptif cepat yang berkontribusi sebagai
+            anggota
+            <br />
+            tim berkinerja tinggi dalam peran pertama mereka setelah lulus.
+          </p>
+
+          <Row>
+            {_whyUs.map((data, i) => (
+              <Col key={i} md={6} className="d-flex my-3">
+                <Image
+                  src={data.img}
+                  alt={data.title}
+                  width={60}
+                  className="mt-3"
+                />
+                <div className="ms-4">
+                  <p className="fw-bold">{data.title}</p>
+                  <p>{data.desc}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className="text-center">
+          <h5>Biaya Bootcamp</h5>
+          <h4 className="fw-bold">Daftar Batch Terbaru Sekarang!</h4>
+          <p>Pendaftaran akan dibuka pada 5 November 2022</p>
+          <Row>
+            {_pricing.map((data, i) => (
+              <Col key={i} md={4} className="text-start">
+                <Card className="pricing h-100">
+                  <Card.Body className="py-4">
+                    <p className="fw-bold">{data.title}</p>
+                    <h6 className="strike">{data.out_price}</h6>
+                    <h3 className="fw-bold">{data.price}</h3>
+                    <hr />
+                    <ul className="list-unstyled">
+                      {data.benefits.map((data, i) => (
+                        <li key={i}>
+                          <span>{data}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </Card.Body>
+                  <Card.Footer>
+                    <Button>Daftar sekarang</Button>
+                  </Card.Footer>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container></Container>
       </section>
       <FooterApp />
     </>
