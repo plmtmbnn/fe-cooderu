@@ -149,21 +149,25 @@ export const _payment = [
     title: "Bayar full/lunas",
     desc: "Setelah  melakukan proses pendaftaran, langsung melakukan pembayaran full/lunas.",
     icon: handCash,
+    style: "#D05E5E",
   },
   {
     title: "Belajar dulu, bayar nanti",
     desc: "Belajar dulu dan bayar setelah Anda menyelesaikan bootcamp 3 bulan bersama Cooderu.",
     icon: transaction,
+    style: "#B9EA1B",
   },
   {
     title: "Cicilan",
     desc: "Sesuaikan pembayaran Anda agar sesuai dengan rencana pengeluaran Anda.",
     icon: moneyBox,
+    style: "#6282F4",
   },
   {
     title: "Beasiswa",
     desc: "Dapatkan tunjangan penuh belajar backend dan frontend bersama Cooderu",
     icon: gradCap,
+    style: "#FE8D3B",
   },
 ];
 
