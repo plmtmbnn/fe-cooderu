@@ -28,7 +28,7 @@ import {
 import imgReact from "../public/react-logo.png";
 import imgNode from "../public/node-logo.png";
 import checkMark from "../public/checkmark.svg";
-import { FaReact, FaNodeJs, FaGenderless } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGenderless, FaStar } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -314,9 +314,40 @@ export default function Home() {
       <section className="my-5">
         <Container>
           <div className="text-center">
-            <h5>Testimoni</h5>
-            <h2 className="fw-bold">Apa Kata Alumni</h2>
+            <h5 className="fw-semi-bold text-primary">Testimoni</h5>
+            <h3 className="fw-bold">Apa Kata Alumni?</h3>
           </div>
+          <Row className="justify-content-center mt-4">
+            <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <div className="d-flex">
+                    <img
+                      src="https://via.placeholder.com/75"
+                      alt=""
+                      className="h-100 rounded-circle"
+                    />
+                    <div className="ms-3 mt-2">
+                      <h6 className="mb-0">Oscar</h6>
+                      <h6 className="mb-0">Alumni Batch I</h6>
+                      <div style={{ color: "#F2C763" }}>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                      </div>
+                    </div>
+                  </div>
+                  <h6 className="mt-4 fw-normal">
+                    “Mentor berpengalaman dan cepat tanggap sangat membantu saya
+                    untuk memahami setiap materi dan menyelesaikan masalah yang
+                    saya temui selama mengikuti Bootcamp.“
+                  </h6>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </section>
 
