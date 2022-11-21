@@ -10,6 +10,7 @@ import {
   _silabusFE,
   _benefit,
   _payment,
+  _ourTeam,
 } from "../static";
 
 // images
@@ -160,6 +161,7 @@ export default function Home() {
           </Tab.Container>
         </Container>
       </section>
+
       <section className="mt-5">
         <Container>
           <Row>
@@ -180,10 +182,10 @@ export default function Home() {
             <Row className="justify-content-center">
               {_benefit.map((data, i) => (
                 <Col key={i} md={6}>
-                  <Card className="h-80 py-2 px-2 my-4">
+                  <Card className="h-80 py-2 border-0">
                     <Card.Body className="d-flex">
-                      <Image src={data.icon} alt="icon" className="p-2" />
-                      <div className="p-2">
+                      <Image src={data.icon} alt="icon" className="py-2" />
+                      <div className="p-4">
                         <h4 className="fw-semibold">{data.title}</h4>
                         <span>{data.desc}</span>
                       </div>
@@ -195,8 +197,9 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      <section section className="mt-5">
-        <Container>
+
+      <section>
+        <Container className="mt-5">
           <div className="text-center">
             <span>Biaya Bootcamp</span>
             <h2 className="fw-bold">Daftar Batch Terbaru Sekarang!</h2>
@@ -215,8 +218,9 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section section className="mt-5">
-        <Container>
+
+      <section>
+        <Container className="my-5">
           <div className="text-center">
             <h2 className="fw-bold">Metode Pembayaran</h2>
             <p>
@@ -226,10 +230,13 @@ export default function Home() {
           <Row>
             {_payment.map((data, i) => (
               <Col key={i} md={3}>
-                <Card className="h-80 py-4 px-2 my-4">
+                <Card className="h-80 py-4 px-4 m-3">
                   <Card.Body>
-                    <Image src={data.icon} alt="icon" className="text-center" />
-
+                    <Image
+                      src={data.icon}
+                      alt="icon"
+                      className="mx-auto d-block"
+                    />
                     <h4 className="fw-semibold text-center my-4 px-2">
                       {data.title}
                     </h4>
@@ -241,7 +248,8 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section className="mt-5">
+
+      <section className="my-5">
         <Container>
           <div className="text-center">
             <span>Testimoni</span>
@@ -249,12 +257,27 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      <section className="mt-5">
+
+      <section className="my-5">
         <Container>
           <h2 className="fw-bold text-center">Tim Kami</h2>
+          <Row className="justify-content-center">
+            {_ourTeam.map((data, i) => (
+              <Col key={i} md={2}>
+                <Card className="h-100 py-4">
+                  <Card.Img variant="top" src={data.image} alt="team" />
+                  <Card.Body>
+                    <h6 className="fw-semibold">{data.name}</h6>
+                    <span>{data.desc}</span>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Container>
       </section>
-      <section className="mt-5">
+
+      <section className="my-5">
         <Container>
           <div className="text-center">
             <h2 className="fw-bold">FAQ</h2>
@@ -265,6 +288,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
       <FooterApp />
     </>
   );

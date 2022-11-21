@@ -1,13 +1,23 @@
+// icons benefit
 import peopleOranges from "../public/people-orange.svg";
 import bankPurple from "../public/bank-purple.svg";
 import boardGreen from "../public/board-green.svg";
 import codeYellow from "../public/code-yellow.svg";
 import keyRed from "../public/key-red.svg";
+
+// icons payment methods
 import laptopBlue from "../public/laptop-blue.svg";
 import gradCap from "../public/graduation-cap.svg";
 import moneyBox from "../public/money-box.svg";
 import transaction from "../public/transaction.svg";
 import handCash from "../public/cash-in-hand.svg";
+
+// img team
+import pakHerman from "../public/HermanHandoko.png";
+import pakIchwan from "../public/IchwanPeryana.png";
+import pakAditya from "../public/AdityaSiregar.png";
+import pakAdrian from "../public/AdrianBenhard.png";
+import pakPolma from "../public/PolmaTambunan.png";
 
 export const _headerCard = [
   {
@@ -120,5 +130,33 @@ export const _payment = [
     title: "Beasiswa",
     desc: "Dapatkan tunjangan penuh belajar backend dan frontend bersama Cooderu",
     icon: gradCap,
+  },
+];
+
+export const _ourTeam = [
+  {
+    name: "Aditya Siregar",
+    desc: "Co-Founder",
+    image: pakAditya,
+  },
+  {
+    name: "Polma Tambunan",
+    desc: "Co-Founder",
+    image: pakPolma,
+  },
+  {
+    name: "Adrian Benhard",
+    desc: "Co-Founder",
+    image: pakAdrian,
+  },
+  {
+    name: "Herman Handoko",
+    desc: "Advisor",
+    image: pakHerman,
+  },
+  {
+    name: "Ichwan Peryana",
+    desc: "Advisor",
+    image: pakIchwan,
   },
 ];
