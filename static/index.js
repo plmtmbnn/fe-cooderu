@@ -18,6 +18,13 @@ import pakAditya from "../public/AdityaSiregar.png";
 import pakAdrian from "../public/AdrianBenhard.png";
 import pakPolma from "../public/PolmaTambunan.png";
 
+// img team
+import logo1 from "../public/assets/image1.png";
+import logo2 from "../public/assets/image2.png";
+import logo3 from "../public/assets/image3.png";
+import logo4 from "../public/assets/image4.png";
+import logo5 from "../public/assets/image5.png";
+
 export const _headerCard = [
   {
     title: "Kurikulum Terbaru",
@@ -216,3 +223,28 @@ export const _almusnus = [
     desc: "Silabus sangat fokus dan kelas sangat fleksibel, memudahkan saya yang memiliki aktivitas di luar Bootcamp.",
   },
 ];
+
+export const _faq = [
+  {
+    ask: "Apakah bootcamp ini berbayar?",
+    answer:
+      "Betul sebesar Rp 7.000.000 (enam juta rupiah). Saat ini baru tersedia metode bayar lunas ya.",
+  },
+  {
+    ask: "Apakah bootcamp ini full online?",
+    answer:
+      "Benar, untuk saat ini tiap pertemuan digelar online pada malam hari.",
+  },
+  {
+    ask: "Berapa lama waktu belajar 1 periode bootcamp sampai selesai?",
+    answer:
+      "1 periode bootcamp digelar selama 12 minggu. Per minggu akan 3 kali pertemuan. 1 pertemuan 2-3 jam.",
+  },
+  {
+    ask: "Apakah ada program hiring?",
+    answer:
+      "Diakhir periode bootcamp akan digelar hiring bersama perusahaan tekonologi (partner Cooderu)",
+  },
+];
+
+export const _logoPartner = [logo1, logo2, logo3, logo4, logo5];

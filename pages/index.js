@@ -11,6 +11,8 @@ import {
   Tab,
   Button,
   Badge,
+  Accordion,
+  useAccordionButton,
 } from "react-bootstrap";
 import FooterApp from "../components/FooterApp";
 import NavbarApp from "../components/NavbarApp";
@@ -23,6 +25,8 @@ import {
   _ourTeam,
   _payment,
   _almusnus,
+  _faq,
+  _logoPartner,
 } from "../static";
 
 // images
@@ -32,6 +36,19 @@ import checkMark from "../public/checkmark.svg";
 import { FaReact, FaNodeJs, FaGenderless, FaStar } from "react-icons/fa";
 
 export default function Home() {
+  function CustomToggle({ children, eventKey }) {
+    const decoratedOnClick = useAccordionButton(eventKey);
+
+    return (
+      <Card.Header
+        className="border-bottom-0 py-3 pointer-event"
+        onClick={decoratedOnClick}
+      >
+        <span className="fw-semi-bold">{children}</span>
+      </Card.Header>
+    );
+  }
+
   return (
     <>
       <Head>
@@ -356,9 +373,14 @@ export default function Home() {
           <Row className="justify-content-center">
             {_ourTeam.map((data, i) => (
               <Col key={i} md={2}>
-                <Card className="h-100 py-4">
-                  <Card.Body>
-                    <Image src={data.image} alt={data.name} width={70} />
+                <Card className="h-100 py-4 border-0">
+                  <Image
+                    variant="top"
+                    src={data.image}
+                    alt="team"
+                    className="mx-auto"
+                  />
+                  <Card.Body className="text-center">
                     <h6 className="fw-semibold">{data.name}</h6>
                     <span>{data.desc}</span>
                   </Card.Body>
@@ -369,18 +391,46 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="my-5">
+      <section className="py-5 bg-info">
         <Container>
-          <div className="text-center">
+          <div className="text-center mb-4">
             <h2 className="fw-bold">FAQ</h2>
             <span>
-              Kamu juga bisa menghubungi kami untuk mengetahui informasi lebih
-              lanjut
+              Kamu juga bisa menghubungi kami untuk mengetahui
+              <br /> informasi lebih lanjut
             </span>
+          </div>
+
+          <Accordion defaultActiveKey="0">
+            <Row>
+              {_faq.map((data, i) => (
+                <Col md={6} key={i}>
+                  <Card className="my-3">
+                    <CustomToggle eventKey={i}>{data.ask}</CustomToggle>
+                    <Accordion.Collapse eventKey={i}>
+                      <Card.Body>
+                        <h6>{data.answer}</h6>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Accordion>
+
+          <div className="text-center mt-5 mb-4">
+            <h2 className="fw-bold">Partner Kami</h2>
+            <span>Kami berkolaborasi untuk membuat dampak bagi orang lain</span>
+            <ul className="list-unstyled mt-5">
+              {_logoPartner.map((data, i) => (
+                <li key={i} className="d-inline mx-4">
+                  <Image width={"100%"} src={data} alt="" />
+                </li>
+              ))}
+            </ul>
           </div>
         </Container>
       </section>
-
       <FooterApp />
     </>
   );
