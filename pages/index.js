@@ -321,7 +321,7 @@ export default function Home() {
           <Row className="justify-content-center mt-4">
             {_almusnus.map((data, i) => (
               <Col md={3} key={i}>
-                <Card className="h-100">
+                <Card className="alumnus">
                   <Card.Body>
                     <div className="d-flex">
                       <img
