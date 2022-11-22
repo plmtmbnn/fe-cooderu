@@ -264,9 +264,14 @@ export default function Home() {
           <Row className="justify-content-center">
             {_ourTeam.map((data, i) => (
               <Col key={i} md={2}>
-                <Card className="h-100 py-4">
-                  <Card.Img variant="top" src={data.image} alt="team" />
-                  <Card.Body>
+                <Card className="h-100 py-4 border-0">
+                  <Image
+                    variant="top"
+                    src={data.image}
+                    alt="team"
+                    className="mx-auto"
+                  />
+                  <Card.Body className="text-center">
                     <h6 className="fw-semibold">{data.name}</h6>
                     <span>{data.desc}</span>
                   </Card.Body>
