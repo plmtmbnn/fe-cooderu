@@ -84,7 +84,7 @@ export default function Home() {
         <Container>
           <Row className="hanging-cards">
             {_headerCard.map((data, i) => (
-              <Col key={i} md={3}>
+              <Col key={i} md={3} className="my-2">
                 <Card className="h-100 py-4 pb-2">
                   <Card.Body>
                     <h5
@@ -128,7 +128,7 @@ export default function Home() {
                     className="align-self-center"
                   >
                     <Image
-                      className="img-fluid m-auto"
+                      className="img-fluid m-auto py-4 px-5"
                       alt="cooderu"
                       src={imgReact}
                       placeholder="blur"
@@ -154,7 +154,7 @@ export default function Home() {
                 <div className="mt-4">
                   <h5 className="fw-semi-bold text-primary">Silabus</h5>
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
-                  <ul className="column mt-4 list-unstyled">
+                  <ul className="column mt-4 list-unstyled learn-ul">
                     {_silabusFE.map((data, i) => (
                       <li key={i} className="mb-3">
                         <Card className="learning">
@@ -175,7 +175,7 @@ export default function Home() {
                     className="align-self-center"
                   >
                     <Image
-                      className="img-fluid m-auto"
+                      className="img-fluid m-auto py-4 px-5"
                       alt="cooderu"
                       src={imgNode}
                       placeholder="blur"
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="mt-4">
                   <h5 className="fw-semi-bold text-secondary">Silabus</h5>
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
-                  <ul className="column mt-4 list-unstyled">
+                  <ul className="column mt-4 list-unstyled learn-ul">
                     {_silabusFE.map((data, i) => (
                       <li key={i} className="mb-3">
                         <Card className="learning">
@@ -260,9 +260,9 @@ export default function Home() {
           <h5>Biaya Bootcamp</h5>
           <h3 className="fw-bold">Daftar Batch Terbaru Sekarang!</h3>
           <p>Pendaftaran akan dibuka pada 5 November 2022</p>
-          <Row className="mt-5">
+          <Row className="mt-lg-5 mt-3">
             {_pricing.map((data, i) => (
-              <Col key={i} md={4} className="text-start">
+              <Col key={i} md={4} className="text-start my-3">
                 <Card
                   className="pricing h-100"
                   style={{
@@ -308,7 +308,7 @@ export default function Home() {
           </div>
           <Row className="mt-5">
             {_payment.map((data, i) => (
-              <Col key={i} md={3}>
+              <Col key={i} md={3} className="my-2">
                 <Card
                   className="h-100 payment"
                   style={{ borderColor: `${data.style}` }}
@@ -337,7 +337,7 @@ export default function Home() {
           </div>
           <Row className="justify-content-center mt-4">
             {_almusnus.map((data, i) => (
-              <Col md={3} key={i}>
+              <Col md={3} key={i} className="my-2">
                 <Card className="alumnus">
                   <Card.Body>
                     <div className="d-flex">

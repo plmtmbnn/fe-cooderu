@@ -1,0 +1,19 @@
+@media (max-width: 767.98px) {
+  .bg-header {
+    background-position: 25%;
+  }
+
+  ul.learn-ul {
+    column-count: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  .py-10 {
+    padding: 3rem 0;
+  }
+
+  .hanging-cards {
+    margin-top: 15px;
+  }
+}

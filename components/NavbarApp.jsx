@@ -22,7 +22,7 @@ function NavbarApp(props) {
               </NavDropdown>
               <Nav.Link href="#home">Promo & Harga</Nav.Link>
               <Nav.Link href="#link">Tentang Kegiatan</Nav.Link>
-              <Button className="ms-3">Daftar Sekarang</Button>
+              <Button className="ms-0 ms-lg-3">Daftar Sekarang</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
