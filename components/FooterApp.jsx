@@ -15,7 +15,7 @@ function FooterApp() {
     <div className="mx-auto bg-darkgreen py-4" style={{ color: "white" }}>
       <Container>
         <Row className="mx-auto">
-          <Col className="my-2">
+          <Col xs={12} md className="my-2 text-center text-md-start">
             <p>
               <FaEnvelope /> hello@cooderu.com
             </p>
@@ -23,12 +23,15 @@ function FooterApp() {
               <FaPhoneAlt /> (+62)812 2345 6789
             </p>
           </Col>
-          <Col className="text-center">
+          <Col xs={12} md className="text-center d-none d-md-block">
             <Image src={logo} alt="cooderu" height={90} />
           </Col>
-          <Col className="text-end my-2">
+          <Col xs={12} md className="text-md-end text-center my-2">
             <p>Menara Citicon, Jl. S. Parman Kav 72,</p>
             <p>Jakarta Barat, Indonesia</p>
+          </Col>
+          <Col xs={12} md className="text-center d-md-none">
+            <Image src={logo} alt="cooderu" height={90} />
           </Col>
         </Row>
         <Row>

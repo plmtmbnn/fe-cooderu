@@ -60,7 +60,7 @@ export default function Home() {
           name="description"
           content="Cooderu | We help and prepare a thousand fast adaptive inexperienced tech talent"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <NavbarApp />
       <section className="py-5 bg-header">
@@ -372,7 +372,7 @@ export default function Home() {
           <h2 className="fw-bold text-center">Tim Kami</h2>
           <Row className="justify-content-center">
             {_ourTeam.map((data, i) => (
-              <Col key={i} md={2}>
+              <Col key={i} md={2} xs={6}>
                 <Card className="h-100 py-4 border-0">
                   <Image
                     variant="top"
@@ -423,11 +423,12 @@ export default function Home() {
             <span>Kami berkolaborasi untuk membuat dampak bagi orang lain</span>
             <ul className="list-unstyled mt-5">
               {_logoPartner.map((data, i) => (
-                <li key={i} className="d-inline mx-4">
+                <li key={i} className="d-inline mx-4 clients">
                   <Image width={"100%"} src={data} alt="" />
                 </li>
               ))}
             </ul>
+            <p className="fw-bold mt-4">dan 20+ partner kami lainnya.</p>
           </div>
         </Container>
       </section>
