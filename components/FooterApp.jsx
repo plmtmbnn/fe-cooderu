@@ -20,7 +20,7 @@ function FooterApp() {
               <FaEnvelope /> hello@cooderu.com
             </p>
             <p>
-              <FaPhoneAlt /> (+62)812 2345 6789
+              <FaPhoneAlt /> +(62) 812 8396 8844
             </p>
           </Col>
           <Col xs={12} md className="text-center d-none d-md-block">
@@ -36,13 +36,13 @@ function FooterApp() {
         </Row>
         <Row>
           <div className="flex flex-row text-center p-3">
-            <a href="" className="me-2 text-reset">
+            <a href="https://www.linkedin.com/company/cooderu/" className="me-2 text-reset">
               <FaLinkedin size="25px" />
             </a>
-            <a href="" className="me-2 text-reset">
+            <a href="https://www.facebook.com/cooderu/" className="me-2 text-reset">
               <FaFacebookSquare size="25px" />
             </a>
-            <a href="" className="me-2 text-reset">
+            <a href="https://www.instagram.com/cooderu/" className="me-2 text-reset">
               <FaInstagram size="25px" />
             </a>
           </div>

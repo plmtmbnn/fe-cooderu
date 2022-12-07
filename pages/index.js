@@ -35,6 +35,18 @@ import imgNode from "../public/node-logo.png";
 import checkMark from "../public/checkmark.svg";
 import { FaReact, FaNodeJs, FaGenderless, FaStar } from "react-icons/fa";
 
+import alumnusOne from '../public/testimonial/testimonial-user-01.png';
+import alumnusTwo from '../public/testimonial/testimonial-user-02.png';
+import alumnusThree from '../public/testimonial/testimonial-user-03.png';
+
+import BackToTop from './components/BackToTop';
+import Link from "next/link";
+
+const alumnus = {
+  0: alumnusOne,
+  1: alumnusTwo,
+  2: alumnusThree
+}
 export default function Home() {
   function CustomToggle({ children, eventKey }) {
     const decoratedOnClick = useAccordionButton(eventKey);
@@ -61,7 +73,15 @@ export default function Home() {
           content="Cooderu | We help and prepare a thousand fast adaptive inexperienced tech talent"
         />
         <link rel="icon" href="/favicon.png" />
+        <meta name="description"
+          content="cooderu.com , bootcamp frontend, bootcamp backend, belajar coding, belajar programming, kursus programing" />
+        <meta property="og:title" content="cooderu.com - Online Bootcamp - Belajar Coding" />
+        <meta property="og:description"
+          content="cooderu.com , bootcamp frontend, bootcamp backend, belajar coding, belajar programming, kursus programing"/>
+        <meta property="og:url" content="https://cooderu.com/"/>
+        <meta property="og:type" content="website"></meta>
       </Head>
+      <BackToTop />
       <NavbarApp />
       <section className="py-5 bg-header">
         <Container>
@@ -101,7 +121,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section className="mt-5">
+      <section className="mt-5" id='our-program'>
         <Container>
           <div className="text-center">
             <h5 className="fw-normal text-primary">Mulai belajar sekarang</h5>
@@ -148,7 +168,10 @@ export default function Home() {
                       Dasar-dasr JS, Nodejs, API, Middleware, dan banyak lagi
                       serta beberapa latihan dan project.
                     </p>
-                    <Button className="mt-4">Daftar Sekarang</Button>
+                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
+                      <Button className="mt-4">Daftar Sekarang</Button>
+                    </Link>
+                    
                   </Col>
                 </Row>
                 <div className="mt-4">
@@ -195,9 +218,10 @@ export default function Home() {
                       Dasar-dasar HTML, CSS, JS, ReactJS, dan banyak lagi serta
                       beberapa latihan dan project.
                     </p>
-                    <Button variant="secondary text-white" className="mt-4">
+                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
+                     <Button variant="secondary text-white" className="mt-4">
                       Daftar Sekarang
-                    </Button>
+                    </Button></Link>
                   </Col>
                 </Row>
                 <div className="mt-4">
@@ -224,7 +248,7 @@ export default function Home() {
       <Container className="mt-5">
         <hr />
       </Container>
-      <section className="py-5">
+      <section className="py-5" id='benefit'>
         <Container>
           <h5 className="text-secondary fw-semi-bold">Benefit</h5>
           <h3 className="fw-bold">Mengapa Cooderu?</h3>
@@ -255,7 +279,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-      <section>
+      <section id='price'>
         <Container className="text-center">
           <h5>Biaya Bootcamp</h5>
           <h3 className="fw-bold">Daftar Batch Terbaru Sekarang!</h3>
@@ -289,7 +313,9 @@ export default function Home() {
                     </ul>
                   </Card.Body>
                   <Card.Footer>
+                  <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
                     <Button>Daftar sekarang</Button>
+                  </Link>
                   </Card.Footer>
                 </Card>
               </Col>
@@ -341,10 +367,11 @@ export default function Home() {
                 <Card className="alumnus">
                   <Card.Body>
                     <div className="d-flex">
-                      <img
-                        src="https://via.placeholder.com/75"
+                      <Image
+                        src={alumnus[i]}
                         alt=""
-                        className="h-100 rounded-circle"
+                        className="h-50 rounded-circle"
+                        style={{width: '60px'}}
                       />
                       <div className="ms-3 mt-2">
                         <h6 className="mb-0">{data.name}</h6>

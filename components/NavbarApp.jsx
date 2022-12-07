@@ -15,18 +15,19 @@ function NavbarApp() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto fw-semi-bold">
+            <Nav className="me-auto fw-semi-bold" >
               <NavDropdown title="Program Bootcamp" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Frontend</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Backend</NavDropdown.Item>
+                <NavDropdown.Item href="#our-program">Frontend</NavDropdown.Item>
+                <NavDropdown.Item href="#our-program">Backend</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">Promo & Harga</Nav.Link>
-              <Nav.Link href="#">Tentang Kegiatan</Nav.Link>
+              <Nav.Link href="#price">Promo & Harga</Nav.Link>
+              <Nav.Link href="#benefit">Tentang Kegiatan</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform"
                 className="btn btn-primary text-white ms-0 ms-lg-3"
+                target={'_blank'}
               >
                 Daftar Sekarang
               </Nav.Link>
