@@ -86,7 +86,30 @@ export default function Home() {
       <section className="py-5 bg-header">
         <Container>
           <Row className="py-10">
-            <Col md={6}>
+              <Col md={6}>
+                  <h1 className="fw-bold">
+                    Telah dibuka Bootcamp
+                    <br /> Batch 3{" "}
+                    <span className="text-secondary h1 fw-bold">Cooderu</span>
+                  </h1>
+                  <p className="fw-semi-bold mt-3">
+                    Asah potensi diri kamu menjadi developer handal bersama praktisi
+                    berpengalaman dan kembangkan karir digital kamu dan daftar sekarang!
+                    <hr/>
+                    Kelas akan mulai 30 Januari 2023
+                  </p>
+                  <div>
+                  <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
+                      className="btn btn-primary text-white ms-0 ms-lg-3"
+                      target={'_blank'} rel="noreferrer"
+                      style={{ background: '#aed033', border: '0px'}}
+                    >
+                      Daftar Sekarang
+                    </a>
+                  </div>
+              </Col>
+            <Col md={6} hidden>
               <h1 className="fw-bold">
                 Mulai karirmu
                 <br /> bersama{" "}
