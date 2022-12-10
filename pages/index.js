@@ -168,7 +168,7 @@ export default function Home() {
                       Dasar-dasr JS, Nodejs, API, Middleware, dan banyak lagi
                       serta beberapa latihan dan project.
                     </p>
-                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
+                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
                       <Button className="mt-4">Daftar Sekarang</Button>
                     </Link>
                     
@@ -218,7 +218,7 @@ export default function Home() {
                       Dasar-dasar HTML, CSS, JS, ReactJS, dan banyak lagi serta
                       beberapa latihan dan project.
                     </p>
-                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
+                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
                      <Button variant="secondary text-white" className="mt-4">
                       Daftar Sekarang
                     </Button></Link>
@@ -313,7 +313,7 @@ export default function Home() {
                     </ul>
                   </Card.Body>
                   <Card.Footer>
-                  <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSedO58VTMPDU5H2eaHv-NmERBflUvBJql0Sz968X27oRjrWUg/viewform">
+                  <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
                     <Button>Daftar sekarang</Button>
                   </Link>
                   </Card.Footer>
