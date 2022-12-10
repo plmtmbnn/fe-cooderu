@@ -36,13 +36,13 @@ function FooterApp() {
         </Row>
         <Row>
           <div className="flex flex-row text-center p-3">
-            <a href="https://www.linkedin.com/company/cooderu/" className="me-2 text-reset">
+            <a target={'_blank'} href="https://www.linkedin.com/company/cooderu/" className="me-2 text-reset" rel="noreferrer">
               <FaLinkedin size="25px" />
             </a>
-            <a href="https://www.facebook.com/cooderu/" className="me-2 text-reset">
+            <a  target={'_blank'}href="https://www.facebook.com/cooderu/" className="me-2 text-reset" rel="noreferrer">
               <FaFacebookSquare size="25px" />
             </a>
-            <a href="https://www.instagram.com/cooderu/" className="me-2 text-reset">
+            <a target={'_blank'} href="https://www.instagram.com/cooderu/" className="me-2 text-reset" rel="noreferrer">
               <FaInstagram size="25px" />
             </a>
           </div>

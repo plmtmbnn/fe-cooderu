@@ -168,7 +168,7 @@ export default function Home() {
                       Dasar-dasr JS, Nodejs, API, Middleware, dan banyak lagi
                       serta beberapa latihan dan project.
                     </p>
-                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
+                    <Link target={'_blank'} href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
                       <Button className="mt-4">Daftar Sekarang</Button>
                     </Link>
                     
