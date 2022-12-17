@@ -25,7 +25,7 @@ function NavbarApp() {
             </Nav>
             <Nav>
               <Nav.Link
-                href="https://linktr.ee/cooderu"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                 className="btn btn-primary text-white ms-0 ms-lg-3"
                 target={'_blank'}
               >
