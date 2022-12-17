@@ -100,7 +100,7 @@ export default function Home() {
                   </p>
                   <div>
                   <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
+                      href="https://linktr.ee/cooderu"
                       className="btn btn-primary text-white ms-0 ms-lg-3"
                       target={'_blank'} rel="noreferrer"
                       style={{ background: '#aed033', border: '0px'}}
@@ -191,7 +191,7 @@ export default function Home() {
                       Dasar-dasr JS, Nodejs, API, Middleware, dan banyak lagi
                       serta beberapa latihan dan project.
                     </p>
-                    <Link target={'_blank'} href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
+                    <Link target={'_blank'} href="https://linktr.ee/cooderu">
                       <Button className="mt-4">Daftar Sekarang</Button>
                     </Link>
                     
@@ -241,7 +241,7 @@ export default function Home() {
                       Dasar-dasar HTML, CSS, JS, ReactJS, dan banyak lagi serta
                       beberapa latihan dan project.
                     </p>
-                    <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
+                    <Link target="_blank" href="https://linktr.ee/cooderu">
                      <Button variant="secondary text-white" className="mt-4">
                       Daftar Sekarang
                     </Button></Link>
@@ -336,7 +336,7 @@ export default function Home() {
                     </ul>
                   </Card.Body>
                   <Card.Footer>
-                  <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform">
+                  <Link target="_blank" href="https://linktr.ee/cooderu">
                     <Button>Daftar sekarang</Button>
                   </Link>
                   </Card.Footer>
