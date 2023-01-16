@@ -96,7 +96,7 @@ export default function Home() {
                     Asah potensi diri kamu menjadi developer handal bersama praktisi
                     berpengalaman dan kembangkan karir digital kamu dan daftar sekarang!
                     <hr/>
-                    Kelas akan mulai 30 Januari 2023
+                    Kelas akan mulai 28 Februari 2023
                   </p>
                   <div>
                   <a
