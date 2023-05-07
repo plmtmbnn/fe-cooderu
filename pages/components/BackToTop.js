@@ -11,7 +11,7 @@ function BackToTop({ className }) {
   //     TopToBottom('.back-to-top');
   // });
   return (
-    <>
+    <div>
       <Link
         href="https://wa.me/+6281283968844"
         className="wa-float"
@@ -25,7 +25,7 @@ function BackToTop({ className }) {
           className="fa fa-plus my-wa-float"
         />
       </Link>
-    </>
+    </div>
   );
 }
 

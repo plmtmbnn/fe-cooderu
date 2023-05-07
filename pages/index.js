@@ -54,7 +54,9 @@ export default function Home() {
     return (
       <Card.Header
         className="border-bottom-0 py-3 pointer-event"
-        onClick={decoratedOnClick}
+        onClick={() => {
+          decoratedOnClick();
+        }}
       >
         <span className="fw-semi-bold">{children}</span>
       </Card.Header>
@@ -102,9 +104,7 @@ export default function Home() {
               <p className="fw-semi-bold mt-3">
                 Asah potensi diri kamu menjadi developer handal bersama praktisi
                 berpengalaman dan kembangkan karir digital kamu dan daftar
-                sekarang!
-                <hr />
-                Kelas akan mulai 26 Juni 2023
+                sekarang! Kelas akan mulai 26 Juni 2023
               </p>
               <div>
                 <a
@@ -213,7 +213,7 @@ export default function Home() {
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
                   <ul className="column mt-4 list-unstyled learn-ul">
                     {_silabusFE.map((data, i) => (
-                      <li key={i} className="mb-3">
+                      <li key={i + "FE"} className="mb-3">
                         <Card className="learning">
                           <Card.Body>
                             <FaGenderless className="rci text-primary me-2" />
@@ -267,7 +267,7 @@ export default function Home() {
                   <h4 className="fw-bold">Apa yang akan kamu pelajari?</h4>
                   <ul className="column mt-4 list-unstyled learn-ul">
                     {_silabusBE.map((data, i) => (
-                      <li key={i} className="mb-3">
+                      <li key={i + "BE"} className="mb-3">
                         <Card className="learning">
                           <Card.Body>
                             <FaGenderless className="rci text-secondary me-2" />
@@ -283,9 +283,7 @@ export default function Home() {
           </Tab.Container>
         </Container>
       </section>
-      <Container className="mt-5">
-        <hr />
-      </Container>
+
       <section className="py-5" id="benefit">
         <Container>
           <h5 className="text-secondary fw-semi-bold">Benefit</h5>
@@ -340,7 +338,6 @@ export default function Home() {
                     </p>
                     <h6 className="strike">{data.out_price}</h6>
                     <h3 className="fw-bold">{data.price}</h3>
-                    <hr />
                     <ul className="list-unstyled">
                       {data.benefits.map((data, i) => (
                         <li key={i} className="my-3">

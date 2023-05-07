@@ -14,9 +14,12 @@ function NavbarApp() {
             <Image src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse className="basic-navbar-nav">
             <Nav className="me-auto fw-semi-bold">
-              <NavDropdown title="Program Bootcamp" id="basic-nav-dropdown">
+              <NavDropdown
+                title="Program Bootcamp"
+                className="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#our-program">
                   Frontend
                 </NavDropdown.Item>

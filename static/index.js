@@ -261,5 +261,4 @@ export const _faq = [
   }
 ];
 
-// export const _logoPartner = [logo1, logo2, logo3, logo4, logo5];
 export const _logoPartner = [logo1, logo2, logo4];
