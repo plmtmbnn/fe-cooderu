@@ -28,24 +28,28 @@ import logo5 from "../public/assets/image5.png";
 export const _headerCard = [
   {
     title: "Kurikulum Terbaru",
-    desc: "Anda akan belajar bersama instruktur yang berpengalaman sehingga memudahkan Anda untuk memahami dengan cepat.",
-    color: "#1F4FFD",
+    desc:
+      "Anda akan belajar bersama instruktur yang berpengalaman sehingga memudahkan Anda untuk memahami dengan cepat.",
+    color: "#1F4FFD"
   },
   {
     title: "Latihan & Portofolio",
-    desc: "Anda akan belajar langsung melalui berbagai latihan, studi kasus & proyek nyata yang telah disediakan oleh mitra pilihan kami.",
-    color: "#B9EA1B",
+    desc:
+      "Anda akan belajar langsung melalui berbagai latihan, studi kasus & proyek nyata yang telah disediakan oleh mitra pilihan kami.",
+    color: "#B9EA1B"
   },
   {
     title: "Career Coaching",
-    desc: "Kami membantu meningkatkan kepercayaan diri Anda dengan membuat resume yang menarik, memberikan tips & trik untuk wawancara.",
-    color: "#F37B0C",
+    desc:
+      "Kami membantu meningkatkan kepercayaan diri Anda dengan membuat resume yang menarik, memberikan tips & trik untuk wawancara.",
+    color: "#F37B0C"
   },
   {
     title: "Hiring Partner",
-    desc: "Kami membantu Anda mendapatkan peran yang Anda sukai dari magang hingga pekerjaan penuh waktu.",
-    color: "#EF1EDA",
-  },
+    desc:
+      "Kami membantu Anda mendapatkan peran yang Anda sukai dari magang hingga pekerjaan penuh waktu.",
+    color: "#EF1EDA"
+  }
 ];
 
 export const _silabusFE = [
@@ -64,7 +68,7 @@ export const _silabusFE = [
   "Introduction React Redux & LocalStorage",
   "Implement Form Validation",
   "Belajar Deploy dan Hosting Sendiri",
-  "Mengerjakan beberapa Latihan & Project",
+  "Mengerjakan beberapa Latihan & Project"
 ];
 
 export const _silabusBE = [
@@ -80,40 +84,43 @@ export const _silabusBE = [
   "Introduction JWT Middleware",
   "Introduction NoSQL",
   "Belajar Deploy dan Hosting Sendiri",
-  "Mengerjakan beberapa Latihan & Project",
+  "Mengerjakan beberapa Latihan & Project"
 ];
 
 export const _whyUs = [
   {
     img: bootcamp,
     title: "Bootcamp 12 minggu",
-    desc: "Terdapat 3 sesi setiap minggunya, dan seluruhnya dilakukan secara online.",
+    desc:
+      "Terdapat 3 sesi setiap minggunya, dan seluruhnya dilakukan secara online."
   },
   {
     img: mentor,
     title: "Exclusive mentorship",
-    desc: "Rasio 15:1 antara siswa dengan mentor",
+    desc: "Rasio 15:1 antara siswa dengan mentor"
   },
   {
     img: method,
     title: "Metode pembayaran yang bervariasi",
-    desc: "Empat jenis cara bayar tersedia. Bayar lunas, cicilan, paylater dan beasiswa.",
+    desc:
+      "Empat jenis cara bayar tersedia. Bayar lunas, cicilan, paylater dan beasiswa."
   },
   {
     img: career,
     title: "Career coaching",
-    desc: "Pembinaan karir untuk meningkatkan kepercayaan diri Anda dan mempersiapkan CV dan wawancara Anda.",
+    desc:
+      "Pembinaan karir untuk meningkatkan kepercayaan diri Anda dan mempersiapkan CV dan wawancara Anda."
   },
   {
     img: project,
     title: "Projects & portfolio",
-    desc: "Akan banyak tugas dan proyek untuk membangun portofolio Anda.",
+    desc: "Akan banyak tugas dan proyek untuk membangun portofolio Anda."
   },
   {
     img: community,
     title: "Great Community",
-    desc: "Very active and dynamic group about career and work.",
-  },
+    desc: "Very active and dynamic group about career and work."
+  }
 ];
 
 export const _pricing = [
@@ -123,9 +130,9 @@ export const _pricing = [
     price: "Rp 7.000.000",
     benefits: [
       "38 pertemuan / 12 minggu",
-      "Pelatihan karir & lowongan pekerjaan",
+      "Pelatihan karir & lowongan pekerjaan"
     ],
-    special: false,
+    special: false
   },
   {
     title: "Early Bird",
@@ -134,9 +141,9 @@ export const _pricing = [
     benefits: [
       "Harga khusus untuk 5 pendaftar pertama!",
       "38 pertemuan / 12 minggu",
-      "Pelatihan karir & lowongan pekerjaan",
+      "Pelatihan karir & lowongan pekerjaan"
     ],
-    special: true,
+    special: true
   },
   {
     title: "Promo Bestie",
@@ -145,106 +152,113 @@ export const _pricing = [
     benefits: [
       "Promo pendaftaran 2 orang khusus untuk 4 pendaftar",
       "38 pertemuan / 12 minggu",
-      "Pelatihan karir & lowongan pekerjaan",
+      "Pelatihan karir & lowongan pekerjaan"
     ],
-    special: false,
-  },
+    special: false
+  }
 ];
 
 export const _payment = [
   {
     title: "Bayar full/lunas",
-    desc: "Setelah  melakukan proses pendaftaran, langsung melakukan pembayaran full/lunas.",
+    desc:
+      "Setelah  melakukan proses pendaftaran, langsung melakukan pembayaran full/lunas.",
     icon: handCash,
-    style: "#D05E5E",
+    style: "#D05E5E"
   },
   {
     title: "Belajar dulu, bayar nanti",
-    desc: "Belajar dulu dan bayar setelah Anda menyelesaikan bootcamp 3 bulan bersama Cooderu.",
+    desc:
+      "Belajar dulu dan bayar setelah Anda menyelesaikan bootcamp 3 bulan bersama Cooderu.",
     icon: transaction,
-    style: "#B9EA1B",
+    style: "#B9EA1B"
   },
   {
     title: "Cicilan",
-    desc: "Sesuaikan pembayaran Anda agar sesuai dengan rencana pengeluaran Anda.",
+    desc:
+      "Sesuaikan pembayaran Anda agar sesuai dengan rencana pengeluaran Anda.",
     icon: moneyBox,
-    style: "#6282F4",
+    style: "#6282F4"
   },
   {
     title: "Beasiswa",
-    desc: "Dapatkan tunjangan penuh belajar backend dan frontend bersama Cooderu",
+    desc:
+      "Dapatkan tunjangan penuh belajar backend dan frontend bersama Cooderu",
     icon: gradCap,
-    style: "#FE8D3B",
-  },
+    style: "#FE8D3B"
+  }
 ];
 
 export const _ourTeam = [
   {
     name: "Polma Tambunan",
     desc: "Co-Founder",
-    image: pakPolma,
+    image: pakPolma
   },
   {
     name: "Aditya Siregar",
     desc: "Co-Founder",
-    image: pakAditya,
+    image: pakAditya
   },
   {
     name: "Adrian Benhard",
     desc: "Co-Founder",
-    image: pakAdrian,
+    image: pakAdrian
   },
   {
     name: "Herman Handoko",
     desc: "Advisor",
-    image: pakHerman,
+    image: pakHerman
   },
   {
     name: "Ichwan Peryana",
     desc: "Advisor",
-    image: pakIchwan,
-  },
+    image: pakIchwan
+  }
 ];
 
 export const _almusnus = [
   {
     name: "Daffa",
     almnus: "Alumni Batch I",
-    desc: "Kuruikulum yang diberikan oleh Cooderu bermanfaat bagi saya karena relevan dengan industri, sehingga lebih mudah untuk diterapkan di tempat kerja.",
+    desc:
+      "Kuruikulum yang diberikan oleh Cooderu bermanfaat bagi saya karena relevan dengan industri, sehingga lebih mudah untuk diterapkan di tempat kerja."
   },
   {
     name: "Oscar",
     almnus: "Alumni Batch I",
-    desc: "Mentor berpengalaman dan cepat tanggap sangat membantu saya untuk memahami setiap materi dan menyelesaikan masalah yang saya temui selama mengikuti Bootcamp.",
+    desc:
+      "Mentor berpengalaman dan cepat tanggap sangat membantu saya untuk memahami setiap materi dan menyelesaikan masalah yang saya temui selama mengikuti Bootcamp."
   },
   {
     name: "Stanley",
     almnus: "Alumni Batch I",
-    desc: "Silabus sangat fokus dan kelas sangat fleksibel, memudahkan saya yang memiliki aktivitas di luar Bootcamp.",
-  },
+    desc:
+      "Silabus sangat fokus dan kelas sangat fleksibel, memudahkan saya yang memiliki aktivitas di luar Bootcamp."
+  }
 ];
 
 export const _faq = [
   {
     ask: "Apakah bootcamp ini berbayar?",
     answer:
-      "Betul sebesar Rp 7.000.000 (enam juta rupiah). Saat ini baru tersedia metode bayar lunas ya.",
+      "Betul sebesar Rp 7.000.000 (enam juta rupiah). Saat ini baru tersedia metode bayar lunas ya."
   },
   {
     ask: "Apakah bootcamp ini full online?",
     answer:
-      "Benar, untuk saat ini tiap pertemuan digelar online pada malam hari.",
+      "Benar, untuk saat ini tiap pertemuan digelar online pada malam hari."
   },
   {
     ask: "Berapa lama waktu belajar 1 periode bootcamp sampai selesai?",
     answer:
-      "1 periode bootcamp digelar selama 12 minggu. Per minggu akan 3 kali pertemuan. 1 pertemuan 2-3 jam.",
+      "1 periode bootcamp digelar selama 12 minggu. Per minggu akan 3 kali pertemuan. 1 pertemuan 2-3 jam."
   },
   {
     ask: "Apakah ada program hiring?",
     answer:
-      "Diakhir periode bootcamp akan digelar hiring bersama perusahaan tekonologi (partner Cooderu)",
-  },
+      "Diakhir periode bootcamp akan digelar hiring bersama perusahaan tekonologi (partner Cooderu)"
+  }
 ];
 
 // export const _logoPartner = [logo1, logo2, logo3, logo4, logo5];
