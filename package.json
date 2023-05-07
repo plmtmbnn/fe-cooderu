@@ -9,10 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint-config-next": "^13.0.3",
     "bootstrap": "^5.2.2",
+    "eslint-config-next": "^13.0.3",
     "next": "13.0.1",
-    "prettier": "^1.19.1",
     "react": "18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
@@ -20,17 +19,12 @@
     "sass": "^1.56.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/eslint-parser": "^7.21.3",
-    "@next/eslint-plugin-next": "^13.3.0",
-    "eslint": "^8.38.0",
-    "eslint-config-react-app": "^5.2.1",
+    "eslint": "^8.40.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^5.0.0-next-6883d7944-20221101",
-    "prettier": "^1.19.1"
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
