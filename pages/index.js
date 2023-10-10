@@ -106,7 +106,7 @@ export default function Home() {
                 berpengalaman dan kembangkan karir digital kamu dan daftar
                 sekarang!
               </p>
-              <div>
+              <div hidden>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                   className="btn btn-primary text-white ms-0 ms-lg-3"
@@ -256,7 +256,7 @@ export default function Home() {
                       target="_blank"
                       href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                     >
-                      <Button variant="secondary text-white" className="mt-4">
+                      <Button hidden variant="secondary text-white" className="mt-4">
                         Daftar Sekarang
                       </Button>
                     </Link>
@@ -352,7 +352,7 @@ export default function Home() {
                       target="_blank"
                       href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                     >
-                      <Button>Daftar sekarang</Button>
+                      <Button hidden>Daftar sekarang</Button>
                     </Link>
                   </Card.Footer>
                 </Card>

@@ -28,7 +28,7 @@ function NavbarApp() {
               <Nav.Link href="#price">Promo & Harga</Nav.Link>
               <Nav.Link href="#benefit">Tentang Kegiatan</Nav.Link>
             </Nav>
-            <Nav>
+            {/* <Nav>
               <Nav.Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                 className="btn btn-primary text-white ms-0 ms-lg-3"
@@ -36,7 +36,7 @@ function NavbarApp() {
               >
                 Daftar Sekarang
               </Nav.Link>
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
