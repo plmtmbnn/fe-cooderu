@@ -104,7 +104,7 @@ export default function Home() {
               <p className="fw-semi-bold mt-3">
                 Asah potensi diri kamu menjadi developer handal bersama praktisi
                 berpengalaman dan kembangkan karir digital kamu dan daftar
-                sekarang! Kelas akan mulai 26 Juni 2023
+                sekarang!
               </p>
               <div>
                 <a
@@ -319,7 +319,7 @@ export default function Home() {
         <Container className="text-center">
           <h5>Biaya Bootcamp</h5>
           <h3 className="fw-bold">Daftar Batch Terbaru Sekarang!</h3>
-          <p>Pendaftaran akan dibuka pada 26 Juni 2023</p>
+          {/* <p>Pendaftaran akan dibuka pada 26 Juni 2023</p> */}
           <Row className="mt-lg-5 mt-3">
             {_pricing.map((data, i) => (
               <Col key={i} md={4} className="text-start my-3">
