@@ -96,7 +96,7 @@ export default function Home() {
         <Container>
           <Row className="py-10">
             <Col md={6}>
-              <h1 className="fw-bold">
+              <h1 className="fw-bold" hidden>
                 Telah dibuka Bootcamp
                 <br /> Batch 3{" "}
                 <span className="text-secondary h1 fw-bold">Cooderu</span>
