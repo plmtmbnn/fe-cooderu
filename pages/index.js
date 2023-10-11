@@ -256,7 +256,11 @@ export default function Home() {
                       target="_blank"
                       href="https://docs.google.com/forms/d/e/1FAIpQLScJWeMYElbgWHcT6VrLrhMM28g6UQN85hLrKIc1UW3_JHbccA/viewform"
                     >
-                      <Button hidden variant="secondary text-white" className="mt-4">
+                      <Button
+                        hidden
+                        variant="secondary text-white"
+                        className="mt-4"
+                      >
                         Daftar Sekarang
                       </Button>
                     </Link>
